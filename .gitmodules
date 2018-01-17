@@ -1,0 +1,4 @@
+[submodule "public"]
+	path = public
+	url = git@github.com:lhf11341/lhf11341.github.io.git
+	branch = master

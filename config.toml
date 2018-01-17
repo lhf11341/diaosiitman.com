@@ -1,0 +1,323 @@
+# Site settings
+baseurl = "/"
+languageCode = "en-us"
+title = "澳门皇家赌场"
+theme = "hugo-agency-theme"
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+
+[params]
+  # You can use Markdown syntax for urls [text](//url.to/source) or
+  # most longer texts.
+  #
+  # All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+  # for more icons. The icons are represented by their corresponding
+  # CSS class.
+
+  # To provide some metadata for search engines feel free to add a few
+  # information about you and your website.
+  name = "刘海峰"
+  description = "刘海峰的博客"
+
+  # Link custom assets relative to /static
+  custom_css = []
+  custom_js  = []
+  favicon    = "favicon.ico"
+
+  # Possibility to disable external/additional fonts
+  # Exception: Fontawesome
+  disableFonts = false
+
+  # 404 error customization
+  [params.error404]
+    heading = "页面走丢了，能帮我找回来吗"
+    text = "参考 [this page](/)"
+
+  # Optional piwik tracking
+  #[params.analytics.piwik]
+  #  URL = "https://stats.example.com"
+  #  ID = "42"
+  #  # Track all subdomains with "*.example.com"
+  #  domain = "www.example.com"
+  #  # Optional integrity check hash
+  #  hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="
+
+  # Navigation
+  [params.navigation]
+    brand = "刘海峰"
+    # Optional logo as brand stored in img/
+    #logo = "logo.svg"
+    services = "接下来"
+    portfolio = "一首"
+    about = "凉凉"
+    team = "送给"
+    contact = "在座的各位"
+
+    # Add custom links. Those can be pre- and postpended to the default menu above.
+    # Use the weight attribute to order your custom links. Uncomment the example
+    # below and replace the values with your own.
+
+    # prepended links
+    #[[menu.prepend]]
+    #  url = "http://gohugo.io"
+    #  name = "Hugo"
+    #  weight = 10
+
+    # postpended links
+    [[menu.postpend]]
+      url = "http://gohugo.io"
+      name = "希望大家喜欢"
+      weight = 10
+
+
+  # Hero section
+  [params.hero]
+    # To change the background image of the hero, replace 'header-bg.jpg' in
+    # the 'static/img' folder.
+    title = "用双手成就你的梦想"
+    subtitle = "不过我们得先来聊聊"
+    buttonText = "讲个故事"
+
+
+  # Services section
+  [params.services]
+    enable = true
+    title = "卖分过期末"
+    subtitle = "为了在座的各位着想，现开启卖分通道！"
+
+    [[params.services.row]]
+
+    [[params.services.row.list]]
+      icon = "fa-shopping-cart"
+      title = "最强青铜"
+      description = "万人之下，一人之上！拳打南山敬老院，脚踢北海幼儿园，太平间里一跺脚，一个喘气的都没有！"
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-laptop"
+      title = "超凡塑料"
+      description = "在这个段位呢，其他都就不想那么多了！就问你扛揍不？"
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-lock"
+      title = "璀璨空气"
+      description = "最厉害的往往都最后一个出来，毕竟魔法少女厄加特也不是随随便便能看到的。"
+      url = "#"
+
+  # Portfolio section
+  [params.portfolio]
+    enable = true
+    # All projects defined in their own files. You can find example projects
+    # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+    # at the root of this Hugo site.
+    # For more informtion take a look at the README.
+    title = "积分排行榜"
+    subtitle = "实时更新（想起来了是实时，想不起来，随便咯）"
+
+    [params.portfolio.modal]
+      client = "Client"
+      date = "Date"
+      category = "Category"
+      buttonText = "Close project"
+
+
+    # About section
+  [params.about]
+    enable = true
+    title = "接下来"
+    subtitle = "这边的才是重点，我就不讲了，大家都懂得哈"
+    endpoint = "Be part<br>of our<br>story!"
+
+    # The events will be listed from the top to the bottom.
+    # All images are stored under 'static/img/about'.
+    # Replace them with your own.
+    [[params.about.events]]
+      img = "1.jpg"
+      date = "一月八号"
+      title = "得分情况"
+      description = "今天大家整体表现还是挺不错的，陈育晴、叶美燕获得了今天的最高分：10+10+10分，黄德辉也不错，斩获10+5+10分，大家掌声鼓励一下。"
+
+    [[params.about.events]]
+      img = "2.jpg"
+      date = "一月九号"
+      title = "得分情况"
+      description = "今天也不错，还以为大家会被挫折给打败，没想到还是有那么多人坚持了下来。今天全场最高分别是：李聪伟、余杰，获得了10+10+10的分数，祝贺下"
+
+    [[params.about.events]]
+      img = "3.jpg"
+      date = "一月十号"
+      title = "得分情况"
+      description = "平淡无奇的一天"
+
+    [[params.about.events]]
+      img = "4.jpg"
+      date = "一月十七号"
+      title = "得分情况"
+      description = "平淡无奇的、、、、哎哟，我去，惊喜的一天啊，哈哈哈，恭喜江伟力、杨建芬获得了5+10分，并送出了助攻。"
+
+
+  # Team section
+  [params.team]
+    enable = true
+    # Possibility to center items
+    #center = true
+    title = "我的联系方式"
+    subtitle = "有需要联系我的，漂流瓶聊"
+    description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."
+
+    # All team member's pictures are stored under 'static/img/team'.
+    # Replace them with your own too.
+    # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
+    [[params.team.members]]
+      img = "1.jpg"
+      name = "我的微信"
+      position = "Lead Designer"
+      reportsTo = "CTO"
+      livesIn = "[Munich, Germany](#some-maps-url)"
+      scope = [
+        "UX for [member dashboard](#)",
+        "Maintainer for [awesome-project](#)",
+        "Open Source [community management](#)"
+      ]
+      # For bio markdown and even multiline strings are available.
+      bio = """Kay is an awesome Lead Designer with heaps of experience in the field of UX.
+She worked at Pied Piper for years until they went belly up."""
+      social = [
+        ["fa-twitter", "#"],
+        ["fa-facebook", "#"],
+        ["fa-linkedin", "#"]
+      ]
+
+    [[params.team.members]]
+      img = "2.jpg"
+      name = "我的QQ"
+      position = "Lead Marketer"
+      social = [
+        ["fa-twitter", "#"],
+        ["fa-facebook", "#"],
+        ["fa-linkedin", "#"]
+      ]
+
+    [[params.team.members]]
+      img = "3.jpg"
+      name = "Diana Pertersen"
+      position = "Lead Developer"
+      social = [
+        ["fa-twitter", "#"],
+        ["fa-facebook", "#"],
+        ["fa-linkedin", "#"]
+      ]
+
+  # Client section
+    [params.clients_list]
+      enable = true
+      # Possibility to center items
+      #center = true
+      # Optional client title specifying the involvement
+      #title = "Used and trusted by"
+
+      # All the clients' logos are stored under 'static/img/logos'.
+      # Replace them with your clients's logos.
+      # Suggestion: .svg in the size of 280px*80px looks good
+      [[params.clients]]
+        logo = "envato.jpg"
+        link = "#"
+
+      [[params.clients]]
+        logo = "designmodo.jpg"
+        link = "#"
+
+      [[params.clients]]
+        logo = "themeforest.jpg"
+        link = "#"
+
+      [[params.clients]]
+        logo = "creative-market.jpg"
+        link = "#"
+
+  # Contact section
+  [params.contact]
+    enable = true
+    title = "给我留个悄悄话"
+    subtitle  = "有什么想说却又不敢说的，都可以在这里和我说，反正我也不想听"
+    buttonText = "发送留言"
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+
+    # It is possible to substitute formspring with other providers
+    # as an example the mailout plugin from caddy.
+    # Provide the post URL for the form and depending on the provider
+    # add some custom JS script to finish the implementation.
+    # postURL = "https://example.com/mailout/"
+
+    email = "lhf@luckyzune.com"
+
+    # Success and error message overwrite for async contact form
+    #thanks = "Thank you for awesomely contacting us."
+    #error = "Message could not be send. Please contact us at mail@example.com instead."
+
+    # 'warning' defines error messages for invalid inputs
+    [params.contact.form.name]
+      text = "Your Name *"
+      warning = "请输入你的名字。"
+
+    [params.contact.form.email]
+      text = "Your Email *"
+      warning = "请输入你的邮件。"
+
+    [params.contact.form.phone]
+      text = "Your Phone *"
+      warning = "请输入你的手机号码。"
+
+    [params.contact.form.message]
+      text = "Your Message *"
+      warning = "请输入留言"
+
+      # Add optional form fields to identify contact forms
+      #[[params.contact.form.hidden]]
+      #  name = "someID"
+      #  value = "example.com"
+      #
+      #[[params.contact.form.hidden]]
+      # Special values for name such as "page" and "site" will be autofilled
+      #  name = "page"
+
+  # Footer section
+  [params.footer]
+    enable = true
+    copyright = "点击旁边的按钮，会有意外收获哟"
+
+    [[params.footer.social]]
+      icon = "fa-twitter"
+      link = "#"
+      title = "Twitter"
+
+    [[params.footer.social]]
+      icon = "fa-facebook"
+      link = "#"
+      title = "Facebook"
+
+    [[params.footer.social]]
+      icon = "fa-linkedin"
+      link = "#"
+      title = "LinkedIn"
+
+    [[params.footer.quicklinks]]
+      text = "右边那个是按钮"
+      link = "#"
+
+    [[params.footer.quicklinks]]
+      text = "左边那个才是按钮"
+      link = "#"
